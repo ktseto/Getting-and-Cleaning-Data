@@ -79,7 +79,9 @@ fBodyAccJerkMag
 fBodyGyroMag  
 fBodyGyroJerkMag  
 
-where the prefix "t" indicates time and "f" frequency domain signals, acceleration from the accelerometer (Acc) is divided into Body and Gravity, Jerk indicates jerk signals, Gyro means gyroscope, and Mag is the magnitude of signals calculated using the Euclidean norm.  For each column name, "mean()" indicates mean value of the measurement, where "std()" indicates standard deviation of the measurement.
+where the prefix "t" indicates time and "f" frequency domain signals, acceleration from the accelerometer (Acc) is divided into Body and Gravity, Jerk indicates jerk signals, Gyro means gyroscope, and Mag is the magnitude of signals calculated using the Euclidean norm.  For each column name, "mean()" indicates mean value of the measurement, where "std()" indicates standard deviation of the measurement.  
+
+Acceleration signal is in standard gravity units 'g', while angular velocity measured by the gyroscope is in radians/second.  
 
 These are all the columns from the tidy data set:
 
