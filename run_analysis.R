@@ -26,7 +26,7 @@ working$subject<-fullsub$subject
 
 working<-merge(working, act, by="actid")
 
-tiny<-aggregate(. ~ actid + activity + subject, data = working,  FUN = mean)
-tiny<-tiny[,-1]
+tidy<-aggregate(. ~ actid + activity + subject, data = working,  FUN = mean)
+tidy<-tidy[,-1]
 
-write.table(tiny, file="tiny.txt", row.name=FALSE)
+write.table(tidy, file="tidy.txt", row.name=FALSE)

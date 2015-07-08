@@ -53,13 +53,13 @@ The script run_analysis.R contains the code to combine and transform the files a
 
 First, for each of "X", "y", and "subject" data, append the training group to the test group.  Each of the data set now has 2,947 + 7,352 = 10,299 rows.  Then, keep only the columns relevant to this project in the "X" data set, i.e. those that measure mean and standard deviation.  For details regarding these columns, see the following section.
 
-Next, append the column in "y" and "subject" to "X", and merge the resulting table with the descriptive tables from activity_labels.txt and features.txt.  Finally, summarize the table by taking the mean of each column, grouping by activity and subject.  The tiny table is then output as tiny.txt.
+Next, append the column in "y" and "subject" to "X", and merge the resulting table with the descriptive tables from activity_labels.txt and features.txt.  Finally, summarize the table by taking the mean of each column, grouping by activity and subject.  The tidy table is then output as tidy.txt.
 
 ### Data Dictionary
 
 Most of the information in this section is extracted from features.txt and features_info.txt, both available in the zip file containing the source data.  For more information about the columns, refer to these files.
 
-The numeric columns in the tiny data set are organized in the following manner:
+The numeric columns in the tidy data set are organized in the following manner:
 
 tBodyAcc-XYZ  
 tGravityAcc-XYZ  
@@ -81,7 +81,7 @@ fBodyGyroJerkMag
 
 where the prefix "t" indicates time and "f" frequency domain signals, acceleration from the accelerometer (Acc) is divided into Body and Gravity, Jerk indicates jerk signals, Gyro means gyroscope, and Mag is the magnitude of signals calculated using the Euclidean norm.  For each column name, "mean()" indicates mean value of the measurement, where "std()" indicates standard deviation of the measurement.
 
-These are all the columns from the tiny data set:
+These are all the columns from the tidy data set:
 
 activity
 
